@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* .poppins-light {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+
+/* .heading-divider {
+  display: inline-block;
+  position: relative;
+  height: 4px;
+  background: linear-gradient(to right, #0063E2 0%, #00ADFF 51%, #0063E2 100%);
+  width: 90px;
+  overflow: hidden;
+}
+
+.fade-in-down:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -1.1px;
+  height: 7px;
+  width: 8px;
+  background-color: #ffffff;
+  animation: heading-move 4s infinite ease-in-out;
+} */
+
+@keyframes fade-in-down {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-down {
+  animation: fade-in-down 0.5s ease-out;
+}
+
+
+
+.hero {
+  background: linear-gradient(135deg, #051820, #002630), url('https://via.placeholder.com/1920x1080') center/cover no-repeat;
+  color: white;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.features .card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.features .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  background: linear-gradient(135deg, #120520, #001230);
+  color: white;
+  padding: 20px 0;
+}
+
+.footer NavLink {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.footer NavLink:hover {
+  text-decoration: underline;
+}
+
+/* Navbar Styling */
+/* Navbar Styling */
+.navbar {
+  background: linear-gradient(135deg, #06172a, #001230);
+
+  box-shadow: 0px 4px 6px rgb(0, 0, 75);
+
+
+
+}
+
+.navbar-brand {
+  color: white !important;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(100%);
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.navbar-nav .nav-link.active {
+  color: #ffdd40 !important;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffdd40 !important;
+}
+
+.btn-outline-light {
+  border-color: white;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: #6a11cb;
+}
+
+.btn-light {
+  background-color: white;
+  color: #2575fc;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-light:hover {
+  background-color: #6a11cb;
+  color: white;
+}
+
+/* Adjust spacing for fixed navbar */
+  body {
+    padding-top: 65px;
+    background-color: rgb(226, 226, 226);
+  }
+
+
+/* ========= dashboard css=============== */
+
+.sidebar {
+  background: linear-gradient(45deg, #343a40, #495057);
+  color: white;
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+.sidebar .nav-link {
+  color: #ffffffb3;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.content {
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.content-header {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
+}
+
+
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* about out team */
+.team-card {
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.team-card img {
+  height: 200px;
+  border-radius: 4px;
+  object-fit: cover;
+
+}
+
+.team-card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.team-card-content {
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+/* contact us */
+
+
+
+
+
+/* detail page */

@@ -1,0 +1,61 @@
+.sidebar {
+    background: linear-gradient(195deg, #42424a, #191919);
+  }
+  
+  
+  .menu-items {
+    color: rgba(255,255,255,0.8);
+    transition: all 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    background: rgba(255,255,255,0.1);
+    color: white;
+    transform: translateX(5px);
+  }
+  
+  .active-menu-items {
+    background: linear-gradient(90deg, #007bff, #006fe6);
+    color: white !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  }
+
+  .admin-menu {
+    background: linear-gradient(195deg, #3a3b7b, #1a1b5d);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu-item {
+    color: rgba(255, 255, 255, 0.8) !important;
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: #fff !important;
+    transform: translateX(5px);
+}
+
+.active-menu-item {
+    background: #fff !important;
+    color: #3a3b7b !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}

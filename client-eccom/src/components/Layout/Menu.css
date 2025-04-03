@@ -1,0 +1,22 @@
+.hover-bg {
+    transition: all 0.3s ease;
+}
+
+.hover-bg:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.hover-primary:hover {
+    color: #111418 !important;
+}
+ /* .nav-link.active {
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgb(46, 140, 255);
+    background-color: #2e3638 !important;
+
+} */
+
+.admin-menu {
+    box-shadow: 3px 0 15px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}

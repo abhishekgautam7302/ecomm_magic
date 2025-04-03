@@ -1,0 +1,16 @@
+# Node modules (backend & frontend)
+node_modules/
+backend/node_modules/
+client-eccom/node_modules/
+
+# Build files
+client-eccom/build/
+backend/build/
+
+# Environment files
+.env
+backend/.env
+client-eccom/.env
+
+# System files
+.DS_Store
