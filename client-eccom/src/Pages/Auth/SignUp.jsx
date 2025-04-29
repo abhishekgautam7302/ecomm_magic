@@ -11,14 +11,14 @@ const SignUp = () => {
     const [password, setPassword] = useState('');
     const [phone, setPhone] = useState('');
     const [address, setAddress] = useState('');
-    const [answer, setAnswer] = useState('');
+    // const [answer, setAnswer] = useState('');
     // Handle form submission
     const handleSubmit = async (e) => {
         e.preventDefault(); // Prevent the default form submission
         try {
             const res = await axios.post(
                 '/api/v1/auth/register',
-                { name, email, password, phone, address, answer }
+                { name, email, password, phone, address }
             );
 
             if (res.data.success) {

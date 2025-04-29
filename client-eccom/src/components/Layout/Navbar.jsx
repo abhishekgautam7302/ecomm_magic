@@ -84,7 +84,7 @@ const Navbar = () => {
                                 </li>
                             </ul>
                         {/* Desktop Search */}
-                        <div className="d-none d-lg-block" style={{ minWidth: '250px' }}>
+                        <div className="d-none d-lg-block" style={{ minWidth: '180px' }}>
                             <SearchInput />
                         </div>
 
@@ -104,13 +104,13 @@ const Navbar = () => {
                         {!auth.user ? (
                             <div className="d-flex gap-2">
                                 <button
-                                    className="btn btn-outline-light rounded-pill px-3"
+                                    className="btn btn-outline-light rounded-lg px-3"
                                     onClick={() => navigate('/login')}
                                 >
                                     Login
                                 </button>
                                 <button
-                                    className="btn btn-light rounded-pill px-3 text-primary d-none d-md-block"
+                                    className="btn btn-light rounded-lg px-3 text-dark d-none d-md-block"
                                     onClick={() => navigate('/signup')}
                                 >
                                     Sign Up

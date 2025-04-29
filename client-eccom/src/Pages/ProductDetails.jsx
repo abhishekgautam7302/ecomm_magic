@@ -97,9 +97,7 @@ const ProductDetails = () => {
                                                 e.target.src = '/placeholder-product.jpg';
                                             }}
                                         />
-                                        <button className="btn btn-danger position-absolute top-0 end-0 m-3 rounded-circle">
-                                            <FaHeart size={20} />
-                                        </button>
+
                                     </div>
                                 </div>
 
@@ -115,13 +113,13 @@ const ProductDetails = () => {
                                                 <span className="text-muted">(128 reviews)</span>
                                             </div>
 
-                                            <h1 className="fw-bold mb-3 display-5 text-gradient">{product.name}</h1>
+                                            <p className="fw-bold mb-3 display-5 text-gradient">{product.name}</p>
 
-                                            <p className="lead text-muted mb-4">
+                                            <p className="lead text-muted mb-4 text-1">
                                                 {product.description}
                                             </p>
 
-                                            <div className="mb-4">
+                                            <div className="">
                                                 <h5 className="d-flex align-items-center gap-2">
                                                     <FaTruck className="text-success" />
                                                     <span className="fw-bold">{product.shipping ? 'Free Shipping' : 'Shipping Calculated at Checkout'}</span>
@@ -133,10 +131,10 @@ const ProductDetails = () => {
                                         <div>
                                             <div className="d-flex justify-content-between align-items-center mb-4">
                                                 <div>
-                                                    <h2 className="fw-bold text-success mb-0 d-flex align-items-center gap-2">
+                                                    <h4 className="fw-bold text-success mb-0 d-flex align-items-center gap-2">
                                                         <FaTag />
                                                         ${product.price.toFixed(2)}
-                                                    </h2>
+                                                    </h4>
                                                     <small className="text-muted">Incl. VAT + Shipping</small>
                                                 </div>
                                                 <span className="badge bg-info fs-6">
@@ -241,6 +239,7 @@ const ProductDetails = () => {
                             background: linear-gradient(45deg, #2c3e50, #3498db);
                             -webkit-background-clip: text;
                             -webkit-text-fill-color: transparent;
+                            font-size: 2rem;
                         }
                         
                         .hover-scale {
@@ -276,6 +275,10 @@ const ProductDetails = () => {
                         .btn:hover {
                             transform: translateY(-1px);
                         }
+                            .lead {
+                                 font-size: 1rem;
+                                font-weight: 400;
+                            }
                     `}</style>
         </Layout>
 

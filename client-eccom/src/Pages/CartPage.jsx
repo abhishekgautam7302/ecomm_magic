@@ -127,7 +127,7 @@ const CartPage = () => {
                     <div className="row g-4">
                         <div className="col-lg-8">
                             {cart.map((product) => (
-                                <div className="card shadow-sm mb-4 border-0" key={product._id}>
+                                <div className="card shadow-sm mb-4 border-1" key={product._id}>
                                     <div className="row g-0">
                                         <div className="col-md-4 d-flex align-items-center p-3 bg-light">
                                             <img
@@ -176,7 +176,7 @@ const CartPage = () => {
                         </div>
 
                         <div className="col-lg-4">
-                            <div className="card shadow-lg border-0 sticky-top" style={{ top: '1rem' }}>
+                            <div className="card shadow-sm border-1 sticky-top" style={{ top: '1rem' }}>
                                 <div className="card-header bg-gradient-primary text-white py-3">
                                     <h3 className="mb-0">Order Summary</h3>
                                 </div>

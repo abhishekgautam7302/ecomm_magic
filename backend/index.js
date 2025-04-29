@@ -25,7 +25,6 @@ app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
-// app.use(express.static(path.join(__dirname,"./client-eccom/build")))
 
 
 app.use("/api/v1/auth", authRoutes);
@@ -34,9 +33,6 @@ app.use('/api/v1/product', productRoutes);
 app.use('/api/v1/services', servicesRoute);
 app.use('/api/v1/payment',paymentRoute);
 
-// app.get('*', function(_, res){
-//     res.sendFile(path.resolve(__dirname,"client-eccom","build","index.html"));
-// });
 
 // for deployment
 const __dirName = path.resolve();
